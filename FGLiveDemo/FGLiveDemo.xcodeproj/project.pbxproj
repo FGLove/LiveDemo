@@ -7,14 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4221288088E870C560651A05 /* libPods-FGLiveDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B329819C8D3A154FB72DC6D /* libPods-FGLiveDemo.a */; };
+		F569AFEA1DAB3C200035CB99 /* FGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFE91DAB3C200035CB99 /* FGMainViewController.m */; };
+		F569AFED1DAB3D0A0035CB99 /* FGAnchorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFEC1DAB3D0A0035CB99 /* FGAnchorListViewController.m */; };
+		F569AFEF1DAB3E5A0035CB99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F569AFEE1DAB3E5A0035CB99 /* Home.storyboard */; };
+		F569AFF71DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFF21DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m */; };
+		F569AFF81DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFF41DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.m */; };
+		F569AFF91DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFF61DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m */; };
+		F569AFFC1DAB49EA0035CB99 /* FGLiveStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFFB1DAB49EA0035CB99 /* FGLiveStatus.m */; };
+		F569AFFF1DAB4A000035CB99 /* FGCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFFE1DAB4A000035CB99 /* FGCreator.m */; };
+		F569B0021DAB6C070035CB99 /* FGLiveStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F569B0011DAB6C070035CB99 /* FGLiveStatusCell.m */; };
+		F569B0051DAB76F80035CB99 /* FGLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569B0041DAB76F80035CB99 /* FGLiveViewController.m */; };
+		F569B0081DAB7EDC0035CB99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A57FFF1DAB389B00B81483 /* AVFoundation.framework */; };
+		F569B00E1DAB848C0035CB99 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F569B00D1DAB848C0035CB99 /* IJKMediaFramework.framework */; };
 		F5A57FD21DAB361F00B81483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A57FD11DAB361F00B81483 /* main.m */; };
 		F5A57FDD1DAB361F00B81483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A57FDC1DAB361F00B81483 /* Assets.xcassets */; };
 		F5A57FE01DAB361F00B81483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A57FDE1DAB361F00B81483 /* LaunchScreen.storyboard */; };
 		F5A57FF11DAB371100B81483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A57FF01DAB371100B81483 /* AppDelegate.m */; };
 		F5A57FF31DAB374C00B81483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A57FF21DAB374C00B81483 /* Main.storyboard */; };
+		F5A57FFE1DAB388E00B81483 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A57FFD1DAB388E00B81483 /* AudioToolbox.framework */; };
+		F5A580021DAB38A400B81483 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A580011DAB38A400B81483 /* CoreMedia.framework */; };
+		F5A580041DAB38AD00B81483 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A580031DAB38AD00B81483 /* CoreVideo.framework */; };
+		F5A580061DAB38BB00B81483 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A580051DAB38BB00B81483 /* libbz2.tbd */; };
+		F5A580081DAB38C400B81483 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A580071DAB38C400B81483 /* libz.tbd */; };
+		F5A5800A1DAB38D000B81483 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A580091DAB38D000B81483 /* MediaPlayer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F5A5800C1DAB38DA00B81483 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A5800B1DAB38DA00B81483 /* MobileCoreServices.framework */; };
+		F5A5800E1DAB38E400B81483 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A5800D1DAB38E400B81483 /* OpenGLES.framework */; };
+		F5A580101DAB38EC00B81483 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A5800F1DAB38EC00B81483 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394BADC84686EA0328DB63C1 /* Pods-FGLiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGLiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6713301A441BB893C60B1D7E /* Pods-FGLiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGLiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B329819C8D3A154FB72DC6D /* libPods-FGLiveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FGLiveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F569AFE81DAB3C200035CB99 /* FGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGMainViewController.h; sourceTree = "<group>"; };
+		F569AFE91DAB3C200035CB99 /* FGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGMainViewController.m; sourceTree = "<group>"; };
+		F569AFEB1DAB3D0A0035CB99 /* FGAnchorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGAnchorListViewController.h; sourceTree = "<group>"; };
+		F569AFEC1DAB3D0A0035CB99 /* FGAnchorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGAnchorListViewController.m; sourceTree = "<group>"; };
+		F569AFEE1DAB3E5A0035CB99 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F569AFF11DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		F569AFF21DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		F569AFF31DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		F569AFF41DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		F569AFF51DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		F569AFF61DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		F569AFFA1DAB49EA0035CB99 /* FGLiveStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLiveStatus.h; sourceTree = "<group>"; };
+		F569AFFB1DAB49EA0035CB99 /* FGLiveStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLiveStatus.m; sourceTree = "<group>"; };
+		F569AFFD1DAB4A000035CB99 /* FGCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCreator.h; sourceTree = "<group>"; };
+		F569AFFE1DAB4A000035CB99 /* FGCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCreator.m; sourceTree = "<group>"; };
+		F569B0001DAB6C070035CB99 /* FGLiveStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLiveStatusCell.h; sourceTree = "<group>"; };
+		F569B0011DAB6C070035CB99 /* FGLiveStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLiveStatusCell.m; sourceTree = "<group>"; };
+		F569B0031DAB76F80035CB99 /* FGLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLiveViewController.h; sourceTree = "<group>"; };
+		F569B0041DAB76F80035CB99 /* FGLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLiveViewController.m; sourceTree = "<group>"; };
+		F569B00D1DAB848C0035CB99 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = FGLiveDemo/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		F5A57FCD1DAB361F00B81483 /* FGLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A57FD11DAB361F00B81483 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5A57FDC1DAB361F00B81483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +68,16 @@
 		F5A57FEF1DAB371100B81483 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5A57FF01DAB371100B81483 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5A57FF21DAB374C00B81483 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F5A57FFD1DAB388E00B81483 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F5A57FFF1DAB389B00B81483 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F5A580011DAB38A400B81483 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F5A580031DAB38AD00B81483 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F5A580051DAB38BB00B81483 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F5A580071DAB38C400B81483 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F5A580091DAB38D000B81483 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F5A5800B1DAB38DA00B81483 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F5A5800D1DAB38E400B81483 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F5A5800F1DAB38EC00B81483 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +85,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F569B00E1DAB848C0035CB99 /* IJKMediaFramework.framework in Frameworks */,
+				F5A580101DAB38EC00B81483 /* VideoToolbox.framework in Frameworks */,
+				F5A5800E1DAB38E400B81483 /* OpenGLES.framework in Frameworks */,
+				F5A5800C1DAB38DA00B81483 /* MobileCoreServices.framework in Frameworks */,
+				F5A5800A1DAB38D000B81483 /* MediaPlayer.framework in Frameworks */,
+				F5A580081DAB38C400B81483 /* libz.tbd in Frameworks */,
+				F5A580061DAB38BB00B81483 /* libbz2.tbd in Frameworks */,
+				F5A580041DAB38AD00B81483 /* CoreVideo.framework in Frameworks */,
+				F5A580021DAB38A400B81483 /* CoreMedia.framework in Frameworks */,
+				F569B0081DAB7EDC0035CB99 /* AVFoundation.framework in Frameworks */,
+				F5A57FFE1DAB388E00B81483 /* AudioToolbox.framework in Frameworks */,
+				4221288088E870C560651A05 /* libPods-FGLiveDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		628133BB99D556C337722195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6713301A441BB893C60B1D7E /* Pods-FGLiveDemo.debug.xcconfig */,
+				394BADC84686EA0328DB63C1 /* Pods-FGLiveDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F569AFF01DAB47090035CB99 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F569AFF11DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.h */,
+				F569AFF21DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m */,
+				F569AFF31DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.h */,
+				F569AFF41DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.m */,
+				F569AFF51DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.h */,
+				F569AFF61DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		F5A57FC41DAB361F00B81483 = {
 			isa = PBXGroup;
 			children = (
 				F5A57FCF1DAB361F00B81483 /* FGLiveDemo */,
 				F5A57FCE1DAB361F00B81483 /* Products */,
+				F5A57FFC1DAB388E00B81483 /* Frameworks */,
+				628133BB99D556C337722195 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A57FE81DAB368C00B81483 /* Main */,
+				F5A57FF81DAB386600B81483 /* Home */,
+				F569AFF01DAB47090035CB99 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -96,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A57FF21DAB374C00B81483 /* Main.storyboard */,
+				F569AFE81DAB3C200035CB99 /* FGMainViewController.h */,
+				F569AFE91DAB3C200035CB99 /* FGMainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +209,67 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F5A57FF81DAB386600B81483 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F5A57FF91DAB386600B81483 /* Controller */,
+				F5A57FFA1DAB386600B81483 /* Model */,
+				F5A57FFB1DAB386600B81483 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F5A57FF91DAB386600B81483 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F569AFEE1DAB3E5A0035CB99 /* Home.storyboard */,
+				F569AFEB1DAB3D0A0035CB99 /* FGAnchorListViewController.h */,
+				F569AFEC1DAB3D0A0035CB99 /* FGAnchorListViewController.m */,
+				F569B0031DAB76F80035CB99 /* FGLiveViewController.h */,
+				F569B0041DAB76F80035CB99 /* FGLiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5A57FFA1DAB386600B81483 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F569AFFA1DAB49EA0035CB99 /* FGLiveStatus.h */,
+				F569AFFB1DAB49EA0035CB99 /* FGLiveStatus.m */,
+				F569AFFD1DAB4A000035CB99 /* FGCreator.h */,
+				F569AFFE1DAB4A000035CB99 /* FGCreator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A57FFB1DAB386600B81483 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F569B0001DAB6C070035CB99 /* FGLiveStatusCell.h */,
+				F569B0011DAB6C070035CB99 /* FGLiveStatusCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A57FFC1DAB388E00B81483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F569B00D1DAB848C0035CB99 /* IJKMediaFramework.framework */,
+				F5A5800F1DAB38EC00B81483 /* VideoToolbox.framework */,
+				F5A5800D1DAB38E400B81483 /* OpenGLES.framework */,
+				F5A5800B1DAB38DA00B81483 /* MobileCoreServices.framework */,
+				F5A580091DAB38D000B81483 /* MediaPlayer.framework */,
+				F5A580071DAB38C400B81483 /* libz.tbd */,
+				F5A580051DAB38BB00B81483 /* libbz2.tbd */,
+				F5A580031DAB38AD00B81483 /* CoreVideo.framework */,
+				F5A580011DAB38A400B81483 /* CoreMedia.framework */,
+				F5A57FFF1DAB389B00B81483 /* AVFoundation.framework */,
+				F5A57FFD1DAB388E00B81483 /* AudioToolbox.framework */,
+				8B329819C8D3A154FB72DC6D /* libPods-FGLiveDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A57FE41DAB361F00B81483 /* Build configuration list for PBXNativeTarget "FGLiveDemo" */;
 			buildPhases = (
+				03151F78557BB3B36AB58547 /* [CP] Check Pods Manifest.lock */,
 				F5A57FC91DAB361F00B81483 /* Sources */,
 				F5A57FCA1DAB361F00B81483 /* Frameworks */,
 				F5A57FCB1DAB361F00B81483 /* Resources */,
+				F430FB5E64937E59B60604F2 /* [CP] Embed Pods Frameworks */,
+				99E49006BA36DD2FDED2C310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,18 +335,76 @@
 				F5A57FF31DAB374C00B81483 /* Main.storyboard in Resources */,
 				F5A57FE01DAB361F00B81483 /* LaunchScreen.storyboard in Resources */,
 				F5A57FDD1DAB361F00B81483 /* Assets.xcassets in Resources */,
+				F569AFEF1DAB3E5A0035CB99 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03151F78557BB3B36AB58547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99E49006BA36DD2FDED2C310 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F430FB5E64937E59B60604F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5A57FC91DAB361F00B81483 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F569AFF91DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				F5A57FF11DAB371100B81483 /* AppDelegate.m in Sources */,
+				F569AFFC1DAB49EA0035CB99 /* FGLiveStatus.m in Sources */,
 				F5A57FD21DAB361F00B81483 /* main.m in Sources */,
+				F569AFED1DAB3D0A0035CB99 /* FGAnchorListViewController.m in Sources */,
+				F569AFF71DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m in Sources */,
+				F569B0021DAB6C070035CB99 /* FGLiveStatusCell.m in Sources */,
+				F569AFFF1DAB4A000035CB99 /* FGCreator.m in Sources */,
+				F569AFF81DAB48C70035CB99 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				F569AFEA1DAB3C200035CB99 /* FGMainViewController.m in Sources */,
+				F569B0051DAB76F80035CB99 /* FGLiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +512,14 @@
 		};
 		F5A57FE51DAB361F00B81483 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6713301A441BB893C60B1D7E /* Pods-FGLiveDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KUA6NK8585;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FGLiveDemo",
+				);
 				INFOPLIST_FILE = FGLiveDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -308,9 +530,14 @@
 		};
 		F5A57FE61DAB361F00B81483 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394BADC84686EA0328DB63C1 /* Pods-FGLiveDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KUA6NK8585;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FGLiveDemo",
+				);
 				INFOPLIST_FILE = FGLiveDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -338,6 +565,7 @@
 				F5A57FE61DAB361F00B81483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
