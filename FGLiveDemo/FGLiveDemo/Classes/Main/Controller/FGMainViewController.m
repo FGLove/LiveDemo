@@ -36,6 +36,7 @@
 
 // 直播采集
 - (IBAction)liveColletBtnClick:(UIButton *)sender {
+    
     FGLiveCollectViewController *collectVc = [[UIStoryboard storyboardWithName:@"Collect" bundle:nil] instantiateInitialViewController];
     
     [self.navigationController showViewController:collectVc sender:nil];

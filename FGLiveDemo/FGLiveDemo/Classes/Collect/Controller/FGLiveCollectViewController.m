@@ -218,7 +218,6 @@
     AVCaptureFocusMode: 聚焦模式
     AVCaptureExposureMode: 曝光模式
  */
-
 -(void)focusWithMode:(AVCaptureFocusMode)focusMode exposureMode:(AVCaptureExposureMode)exposureMode atPoint:(CGPoint)point
 {
     // 取出视频设备
