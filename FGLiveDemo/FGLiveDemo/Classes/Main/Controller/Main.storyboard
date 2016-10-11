@@ -30,10 +30,26 @@
                                     <action selector="anchorListBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1G-w5-6k1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUQ-Qn-xm0">
+                                <color key="backgroundColor" red="0.94339247739999998" green="1" blue="0.91196637560000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="JJe-aJ-4dw"/>
+                                    <constraint firstAttribute="height" constant="44" id="oOG-5j-H5g"/>
+                                </constraints>
+                                <state key="normal" title="我要直播">
+                                    <color key="titleColor" red="1" green="0.59110145010000004" blue="0.3948048804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="liveColletBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLA-bj-EhG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kUQ-Qn-xm0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="0wu-DS-r53"/>
                             <constraint firstItem="BVF-ZJ-Htt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="MIx-Zl-YCW"/>
+                            <constraint firstItem="kUQ-Qn-xm0" firstAttribute="top" secondItem="BVF-ZJ-Htt" secondAttribute="bottom" constant="50" id="V7K-4k-URe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kUQ-Qn-xm0" secondAttribute="trailing" constant="30" id="W0b-kb-KnA"/>
                             <constraint firstItem="BVF-ZJ-Htt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="dca-6B-5VL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BVF-ZJ-Htt" secondAttribute="trailing" constant="30" id="u5l-YM-F3X"/>
                         </constraints>

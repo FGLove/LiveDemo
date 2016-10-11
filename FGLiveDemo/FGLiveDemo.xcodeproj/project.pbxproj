@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4221288088E870C560651A05 /* libPods-FGLiveDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B329819C8D3A154FB72DC6D /* libPods-FGLiveDemo.a */; };
+		F55F1E4C1DAC83D200D7E5DD /* Collect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F1E4B1DAC83D200D7E5DD /* Collect.storyboard */; };
+		F55F1E4F1DAC841B00D7E5DD /* FGLiveCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F1E4E1DAC841B00D7E5DD /* FGLiveCollectViewController.m */; };
 		F569AFEA1DAB3C200035CB99 /* FGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFE91DAB3C200035CB99 /* FGMainViewController.m */; };
 		F569AFED1DAB3D0A0035CB99 /* FGAnchorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569AFEC1DAB3D0A0035CB99 /* FGAnchorListViewController.m */; };
 		F569AFEF1DAB3E5A0035CB99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F569AFEE1DAB3E5A0035CB99 /* Home.storyboard */; };
@@ -40,6 +42,9 @@
 		394BADC84686EA0328DB63C1 /* Pods-FGLiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGLiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6713301A441BB893C60B1D7E /* Pods-FGLiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGLiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FGLiveDemo/Pods-FGLiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8B329819C8D3A154FB72DC6D /* libPods-FGLiveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FGLiveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55F1E4B1DAC83D200D7E5DD /* Collect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collect.storyboard; sourceTree = "<group>"; };
+		F55F1E4D1DAC841B00D7E5DD /* FGLiveCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLiveCollectViewController.h; sourceTree = "<group>"; };
+		F55F1E4E1DAC841B00D7E5DD /* FGLiveCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLiveCollectViewController.m; sourceTree = "<group>"; };
 		F569AFE81DAB3C200035CB99 /* FGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGMainViewController.h; sourceTree = "<group>"; };
 		F569AFE91DAB3C200035CB99 /* FGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGMainViewController.m; sourceTree = "<group>"; };
 		F569AFEB1DAB3D0A0035CB99 /* FGAnchorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGAnchorListViewController.h; sourceTree = "<group>"; };
@@ -112,6 +117,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F55F1E471DAC83AD00D7E5DD /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				F55F1E481DAC83AD00D7E5DD /* Controller */,
+				F55F1E491DAC83AD00D7E5DD /* Model */,
+				F55F1E4A1DAC83AD00D7E5DD /* View */,
+			);
+			path = Collect;
+			sourceTree = "<group>";
+		};
+		F55F1E481DAC83AD00D7E5DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F55F1E4B1DAC83D200D7E5DD /* Collect.storyboard */,
+				F55F1E4D1DAC841B00D7E5DD /* FGLiveCollectViewController.h */,
+				F55F1E4E1DAC841B00D7E5DD /* FGLiveCollectViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F55F1E491DAC83AD00D7E5DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F55F1E4A1DAC83AD00D7E5DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F569AFF01DAB47090035CB99 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +209,7 @@
 			children = (
 				F5A57FE81DAB368C00B81483 /* Main */,
 				F5A57FF81DAB386600B81483 /* Home */,
+				F55F1E471DAC83AD00D7E5DD /* Collect */,
 				F569AFF01DAB47090035CB99 /* Other */,
 			);
 			path = Classes;
@@ -333,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A57FF31DAB374C00B81483 /* Main.storyboard in Resources */,
+				F55F1E4C1DAC83D200D7E5DD /* Collect.storyboard in Resources */,
 				F5A57FE01DAB361F00B81483 /* LaunchScreen.storyboard in Resources */,
 				F5A57FDD1DAB361F00B81483 /* Assets.xcassets in Resources */,
 				F569AFEF1DAB3E5A0035CB99 /* Home.storyboard in Resources */,
@@ -396,6 +437,7 @@
 			files = (
 				F569AFF91DAB48C70035CB99 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				F5A57FF11DAB371100B81483 /* AppDelegate.m in Sources */,
+				F55F1E4F1DAC841B00D7E5DD /* FGLiveCollectViewController.m in Sources */,
 				F569AFFC1DAB49EA0035CB99 /* FGLiveStatus.m in Sources */,
 				F5A57FD21DAB361F00B81483 /* main.m in Sources */,
 				F569AFED1DAB3D0A0035CB99 /* FGAnchorListViewController.m in Sources */,
@@ -462,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -503,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

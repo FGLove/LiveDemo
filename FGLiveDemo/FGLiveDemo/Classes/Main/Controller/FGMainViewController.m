@@ -8,6 +8,7 @@
 
 #import "FGMainViewController.h"
 #import "FGAnchorListViewController.h"
+#import "FGLiveCollectViewController.h"
 
 @interface FGMainViewController ()
 
@@ -28,11 +29,19 @@
 // 点击了主播列表按钮
 - (IBAction)anchorListBtnClick:(UIButton *)sender {
     
-    
     FGAnchorListViewController *anchorVc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
     
     [self.navigationController showViewController:anchorVc sender:nil];
 }
+
+// 直播采集
+- (IBAction)liveColletBtnClick:(UIButton *)sender {
+    FGLiveCollectViewController *collectVc = [[UIStoryboard storyboardWithName:@"Collect" bundle:nil] instantiateInitialViewController];
+    
+    [self.navigationController showViewController:collectVc sender:nil];
+}
+
+
 
 
 
