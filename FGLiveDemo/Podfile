@@ -8,5 +8,6 @@ target 'FGLiveDemo' do
   # Pods for FGLiveDemo
   	pod 'AFNetworking'
   	pod 'MJExtension'
-  	pod 'SDWebImage' 
+  	pod 'SDWebImage'
+    pod 'GPUImage'
 end
