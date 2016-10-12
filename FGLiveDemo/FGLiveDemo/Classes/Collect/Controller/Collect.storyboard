@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q1b-u8-n95">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -146,7 +147,22 @@
                     <view key="view" contentMode="scaleToFill" id="jLJ-S1-1Th">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nta-dW-ObP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0bm-0Z-cSu"/>
+                                    <constraint firstAttribute="width" constant="49" id="LrE-42-aEf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="beautilyTypeValueChanged:" destination="1Lp-k1-C7v" eventType="valueChanged" id="B41-GG-7dN"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nta-dW-ObP" firstAttribute="top" secondItem="x3P-qv-I9Z" secondAttribute="bottom" constant="40" id="J9f-vo-LX3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nta-dW-ObP" secondAttribute="trailing" constant="30" id="Tmb-wv-K6U"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dj-JP-sBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
