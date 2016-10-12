@@ -10,4 +10,5 @@
 
 @interface FGLiveCollectViewController : UIViewController
 
+
 @end

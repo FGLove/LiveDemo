@@ -1,10 +1,158 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KdZ-lJ-5IA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q1b-u8-n95">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="JPh-Lw-2dO">
+            <objects>
+                <viewController id="Q1b-u8-n95" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7VU-JI-dHZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="W1v-TJ-VpS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fbh-5U-5Mr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbT-d5-IBv">
+                                <color key="backgroundColor" red="1" green="0.59110145010000004" blue="0.3948048804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HZh-h0-xh6"/>
+                                </constraints>
+                                <state key="normal" title="音视频采集"/>
+                                <connections>
+                                    <segue destination="KdZ-lJ-5IA" kind="show" id="7Dh-KF-fsG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-0S-2Pg">
+                                <color key="backgroundColor" red="1" green="0.59110145010000004" blue="0.3948048804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BuV-5e-gD1"/>
+                                </constraints>
+                                <state key="normal" title="GPUImage原生美颜"/>
+                                <connections>
+                                    <segue destination="IOS-8D-lCe" kind="show" id="8ux-fC-bDM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-z5-kcI">
+                                <color key="backgroundColor" red="1" green="0.59110145010000004" blue="0.3948048804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Vuq-SI-PfW"/>
+                                </constraints>
+                                <state key="normal" title="美颜相机美颜"/>
+                                <connections>
+                                    <segue destination="1Lp-k1-C7v" kind="show" id="l0b-rL-tqN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yvF-0S-2Pg" firstAttribute="top" secondItem="qbT-d5-IBv" secondAttribute="bottom" constant="30" id="1Sx-bd-u5k"/>
+                            <constraint firstItem="yvF-0S-2Pg" firstAttribute="trailing" secondItem="qbT-d5-IBv" secondAttribute="trailing" id="2vJ-ND-WU1"/>
+                            <constraint firstAttribute="trailing" secondItem="qbT-d5-IBv" secondAttribute="trailing" constant="40" id="ICY-Xk-Iw5"/>
+                            <constraint firstItem="kki-z5-kcI" firstAttribute="trailing" secondItem="yvF-0S-2Pg" secondAttribute="trailing" id="KEu-5x-dzA"/>
+                            <constraint firstItem="qbT-d5-IBv" firstAttribute="top" secondItem="7VU-JI-dHZ" secondAttribute="bottom" constant="100" id="Sdl-L2-ajH"/>
+                            <constraint firstItem="kki-z5-kcI" firstAttribute="top" secondItem="yvF-0S-2Pg" secondAttribute="bottom" constant="30" id="aMR-GO-pJX"/>
+                            <constraint firstItem="kki-z5-kcI" firstAttribute="leading" secondItem="yvF-0S-2Pg" secondAttribute="leading" id="kUA-Zp-1K0"/>
+                            <constraint firstItem="yvF-0S-2Pg" firstAttribute="leading" secondItem="qbT-d5-IBv" secondAttribute="leading" id="nev-Pw-6gE"/>
+                            <constraint firstItem="qbT-d5-IBv" firstAttribute="leading" secondItem="Fbh-5U-5Mr" secondAttribute="leading" constant="40" id="vL3-TF-JdQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJ0-Sr-gZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2196" y="166"/>
+        </scene>
+        <!--Image Collect View Controller-->
+        <scene sceneID="8Ng-La-YdS">
+            <objects>
+                <viewController id="IOS-8D-lCe" customClass="FGGPUImageCollectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bdT-1P-Mxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="7NU-lx-cIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7q5-aP-nPs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="zn2-N6-yHj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4KD-xQ-6nq"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.20585707989999999" green="0.47501306240000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="brightnessFilterValueChanged:" destination="IOS-8D-lCe" eventType="valueChanged" id="Iud-VP-snq"/>
+                                    <action selector="brightnessFilterValueChanged:" destination="KdZ-lJ-5IA" eventType="valueChanged" id="qC3-0H-k3C"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="icU-sx-8DR">
+                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.20585707989999999" green="0.47501306240000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="bilateralFilterValueChanged:" destination="IOS-8D-lCe" eventType="valueChanged" id="96Z-5z-x9p"/>
+                                    <action selector="bilateralFilterValueChanged:" destination="KdZ-lJ-5IA" eventType="valueChanged" id="Nbx-YN-b3W"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美白" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzS-bR-GxG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gIN-8B-10a"/>
+                                    <constraint firstAttribute="width" constant="42" id="oEn-T1-bd1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="磨皮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-AW-bXZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7ix-mr-RET"/>
+                                    <constraint firstAttribute="width" constant="42" id="v7C-lk-YdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zn2-N6-yHj" firstAttribute="leading" secondItem="7q5-aP-nPs" secondAttribute="leading" constant="40" id="3h2-3t-CeB"/>
+                            <constraint firstItem="7NU-lx-cIH" firstAttribute="top" secondItem="zn2-N6-yHj" secondAttribute="bottom" constant="20" id="4iU-u9-SO5"/>
+                            <constraint firstItem="WzS-bR-GxG" firstAttribute="centerX" secondItem="zn2-N6-yHj" secondAttribute="centerX" id="Gne-I9-9a5"/>
+                            <constraint firstItem="icU-sx-8DR" firstAttribute="leading" secondItem="zn2-N6-yHj" secondAttribute="leading" id="JPT-2l-CPg"/>
+                            <constraint firstItem="icU-sx-8DR" firstAttribute="trailing" secondItem="zn2-N6-yHj" secondAttribute="trailing" id="OZD-19-Eqd"/>
+                            <constraint firstAttribute="trailing" secondItem="zn2-N6-yHj" secondAttribute="trailing" constant="40" id="ZbZ-tv-SzA"/>
+                            <constraint firstItem="zn2-N6-yHj" firstAttribute="top" secondItem="icU-sx-8DR" secondAttribute="bottom" constant="50" id="aYa-wj-h5e"/>
+                            <constraint firstItem="Hgp-AW-bXZ" firstAttribute="centerX" secondItem="icU-sx-8DR" secondAttribute="centerX" id="hgK-rK-JyK"/>
+                            <constraint firstItem="icU-sx-8DR" firstAttribute="top" secondItem="Hgp-AW-bXZ" secondAttribute="bottom" constant="1" id="iyu-yn-ahO"/>
+                            <constraint firstItem="zn2-N6-yHj" firstAttribute="top" secondItem="WzS-bR-GxG" secondAttribute="bottom" constant="1" id="yLS-AZ-ggr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adp-2c-xxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="43"/>
+        </scene>
+        <!--Beautify Camera Collect View Controller-->
+        <scene sceneID="GW5-we-AYF">
+            <objects>
+                <viewController id="1Lp-k1-C7v" customClass="FGBeautifyCameraCollectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x3P-qv-I9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ktw-7G-5D8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLJ-S1-1Th">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dj-JP-sBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="726"/>
+        </scene>
         <!--Live Collect View Controller-->
         <scene sceneID="IEC-gX-zgZ">
             <objects>
@@ -38,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZu-7f-37S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168.80000000000001" y="27.436281859070466"/>
+            <point key="canvasLocation" x="-583" y="-625"/>
         </scene>
     </scenes>
 </document>

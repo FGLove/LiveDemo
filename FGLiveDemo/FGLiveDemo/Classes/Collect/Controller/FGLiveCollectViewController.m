@@ -23,7 +23,7 @@
 
 #import "FGLiveCollectViewController.h"
 #import <AVFoundation/AVFoundation.h>
-
+#import <GPUImage/GPUImage.h>
 
 @interface FGLiveCollectViewController ()<AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate>
 
@@ -39,8 +39,8 @@
 /** 视频预览图层 */
 @property(nonatomic,strong)AVCaptureVideoPreviewLayer *previedLayer;
 
+/** 聚焦图片视图 */
 @property (nonatomic, weak) UIImageView *focusCursorImageView;
-
 
 @end
 
@@ -66,6 +66,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupCaputureVideo];
+    
+    
 }
 
 // 捕获音视频
@@ -133,7 +135,7 @@
     
 }
 
-// 获取指定的摄像头设备(前置摄像头 or 后置 摄像头)
+// 获取指定的摄像头设备(前置摄像头 or 后置摄像头)
 - (AVCaptureDevice *)getVideoDevice:(AVCaptureDevicePosition)position
 {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];

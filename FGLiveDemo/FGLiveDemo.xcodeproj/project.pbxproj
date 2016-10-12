@@ -22,6 +22,8 @@
 		F569B0051DAB76F80035CB99 /* FGLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F569B0041DAB76F80035CB99 /* FGLiveViewController.m */; };
 		F569B0081DAB7EDC0035CB99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A57FFF1DAB389B00B81483 /* AVFoundation.framework */; };
 		F569B00E1DAB848C0035CB99 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F569B00D1DAB848C0035CB99 /* IJKMediaFramework.framework */; };
+		F57EFE721DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EFE711DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.m */; };
+		F57EFE751DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EFE741DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.m */; };
 		F5A57FD21DAB361F00B81483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A57FD11DAB361F00B81483 /* main.m */; };
 		F5A57FDD1DAB361F00B81483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A57FDC1DAB361F00B81483 /* Assets.xcassets */; };
 		F5A57FE01DAB361F00B81483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A57FDE1DAB361F00B81483 /* LaunchScreen.storyboard */; };
@@ -65,6 +67,10 @@
 		F569B0031DAB76F80035CB99 /* FGLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLiveViewController.h; sourceTree = "<group>"; };
 		F569B0041DAB76F80035CB99 /* FGLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLiveViewController.m; sourceTree = "<group>"; };
 		F569B00D1DAB848C0035CB99 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = FGLiveDemo/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F57EFE701DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGGPUImageCollectViewController.h; sourceTree = "<group>"; };
+		F57EFE711DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGGPUImageCollectViewController.m; sourceTree = "<group>"; };
+		F57EFE731DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGBeautifyCameraCollectViewController.h; sourceTree = "<group>"; };
+		F57EFE741DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGBeautifyCameraCollectViewController.m; sourceTree = "<group>"; };
 		F5A57FCD1DAB361F00B81483 /* FGLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A57FD11DAB361F00B81483 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5A57FDC1DAB361F00B81483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +139,10 @@
 				F55F1E4B1DAC83D200D7E5DD /* Collect.storyboard */,
 				F55F1E4D1DAC841B00D7E5DD /* FGLiveCollectViewController.h */,
 				F55F1E4E1DAC841B00D7E5DD /* FGLiveCollectViewController.m */,
+				F57EFE701DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.h */,
+				F57EFE711DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.m */,
+				F57EFE731DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.h */,
+				F57EFE741DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -439,6 +449,8 @@
 				F5A57FF11DAB371100B81483 /* AppDelegate.m in Sources */,
 				F55F1E4F1DAC841B00D7E5DD /* FGLiveCollectViewController.m in Sources */,
 				F569AFFC1DAB49EA0035CB99 /* FGLiveStatus.m in Sources */,
+				F57EFE751DAE1DFF00C7CAE1 /* FGBeautifyCameraCollectViewController.m in Sources */,
+				F57EFE721DAE1C9D00C7CAE1 /* FGGPUImageCollectViewController.m in Sources */,
 				F5A57FD21DAB361F00B81483 /* main.m in Sources */,
 				F569AFED1DAB3D0A0035CB99 /* FGAnchorListViewController.m in Sources */,
 				F569AFF71DAB48C70035CB99 /* NSArray+HYBUnicodeReadable.m in Sources */,
